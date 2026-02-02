@@ -75,12 +75,26 @@ const posts = (await getCollection('blog')).sort(
 				margin-bottom: 3rem;
 			}
 			@media (max-width: 720px) {
+				.intro {
+					text-align: left;
+				}
+				.intro h3 {
+					font-size: 2rem;
+				}
 				ul {
 					gap: 0.5em;
+					justify-content: flex-start;
+					align-items: flex-start;
 				}
 				ul li {
 					width: 100%;
-					text-align: center;
+					text-align: left;
+				}
+				ul li a {
+					text-align: left;
+				}
+				.title, .date {
+					text-align: left;
 				}
 			}
 		</style>
