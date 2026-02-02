@@ -1,0 +1,59 @@
+---
+import { type CollectionEntry, getCollection, render } from 'astro:content';
+import BlogPost from '../layouts/BlogPost.astro';
+
+export async function getStaticPaths() {
+	const posts = (await getCollection('blog')).sort(
+		(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+	);
+	return posts.map((post, index) => ({
+		params: { slug: post.id },
+		props: {
+			post,
+			nextPost: posts[index + 1] || null,
+		},
+	}));
+}
+
+const { post, nextPost } = Astro.props;
+const { Content } = await render(post);
+---
+
+<BlogPost {...post.data}>
+	<Content />
+	{nextPost && (
+		<nav class="post-nav">
+			<a href={`/${nextPost.id}/`} class="next-post">
+				<span class="label">Next post</span>
+				<span class="title">{nextPost.data.title}</span>
+			</a>
+		</nav>
+	)}
+</BlogPost>
+
+<style>
+	.post-nav {
+		margin-top: 3rem;
+		padding-top: 2rem;
+		border-top: 1px solid var(--gray-light);
+	}
+	.next-post {
+		display: block;
+		text-decoration: none;
+	}
+	.next-post .label {
+		display: block;
+		font-size: 0.875rem;
+		color: rgb(var(--gray));
+		margin-bottom: 0.25rem;
+	}
+	.next-post .title {
+		display: block;
+		font-size: 1.25rem;
+		font-weight: 600;
+		color: rgb(var(--black));
+	}
+	.next-post:hover .title {
+		color: rgb(var(--accent));
+	}
+</style>

@@ -1,0 +1,53 @@
+---
+import { Image } from 'astro:assets';
+import ProfileImage from '../assets/mark-park3-low.jpg';
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="About Mark"
+	description="Multi-skilled designer & digital consultant"
+	pubDate={new Date('August 08 2021')}
+	hideTitle={true}
+>
+<div class="profile-image">
+	<Image src={ProfileImage} alt="Mark Bowley" width={120} height={120} />
+</div>
+<h1>Hi, I’m Mark</h1>
+
+<h2>Multi-skilled designer & digital consultant</h2>
+<hr>
+<style>
+h1, h2 { 	margin-bottom: 2rem;
+}
+h3 { 
+	margin-bottom: 2rem;
+}
+	.profile-image {
+		margin-bottom: 1.5rem;
+	}
+	.profile-image img {
+		border-radius: 50%;
+	}
+</style>
+<p>With three decades of experience as a brand and digital designer, I now consider myself very much a generalist, but a specialist at figuring stuff out. </p>
+ 
+<blockquote>I’m a generalist, but a specialist at figuring stuff out</blockquote>
+ 
+<p>I’m an instinctive problem-solver and maker. I help founders and business owners plan, design and implement for digital marketing growth. Available part-time or for projects. </p>
+ 
+<p>I’m not just a pure designer either, I’m curious enough to constantly learn new things. So my work experience has been full of other things like a bit of UX, Design Thinking, SEO and digital implementation. I don’t do full custom programming, but I know enough to get things done, and know plenty about low/no-code methodologies too. </p>
+ 
+<p>This site serves as a place where I share my thinking, <a target="_blank" href="https://minitools.carrd.co/">launches</a>, tips and resources for creators. If you’re looking for my personal profile see <a target="_blank" href="https://markbowley.com">markbowley.com</a>, and for work and services, see <a target="_blank" href="https://bowleydesign.com">bowleydesign.com</a>.</p>
+
+<h3>Praise for my work</h3>
+<blockquote>“Mark is a dream to work with.”</blockquote>
+<p><a target="_blank" href="https://www.linkedin.com/in/ericwaisman/">Eric Waisman</a></p>
+ 
+<blockquote>“Mark had an ability to bring our vague ideas to life.”</blockquote>
+<p><a target="_blank" href="LINK">VIVA Tuition</a></p>
+ 
+<blockquote>“Thoughtful, insightful and delivered with great attention to detail.”</blockquote>
+<p><a target="_blank" href="LINK">Sociability</a></p>
+ 
+</Layout>

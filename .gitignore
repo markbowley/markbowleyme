@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Astro build output
+dist/
+.astro/
+
+# Environment
+.env
+.env.*
+
+# OS files
+.DS_Store
+
+# Notion export (large, not needed in repo)
+ExportBlock-*/
+
+# Import scripts (local use only)
+*.py
