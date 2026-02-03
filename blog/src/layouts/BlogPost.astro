@@ -34,7 +34,7 @@ const { title, description, pubDate, updatedDate, heroImage, tags, canonicalUrl,
 				max-width: calc(100% - 2em);
 				margin: auto;
 				padding: 1em;
-				color: rgb(var(--gray-dark));
+				color: var(--gray-dark);
 			}
 			.title {
 				margin-bottom: 1em;
@@ -46,7 +46,7 @@ const { title, description, pubDate, updatedDate, heroImage, tags, canonicalUrl,
 				margin: 0 0 0.5em 0;
 			}
 			.date {
-				color: rgb(var(--gray));
+				color: var(--gray);
 			}
 			.last-updated-on {
 				font-style: italic;
@@ -65,10 +65,16 @@ const { title, description, pubDate, updatedDate, heroImage, tags, canonicalUrl,
 			}
 
 			.tag {
-				background: var(--gray-light);
+				background: var(--accent-light);
 				padding: 0.25rem 0.5rem;
 				border-radius: 3px;
 				font-size: 0.875rem;
+				text-decoration: none;
+				color: var(--gray-dark);
+			}
+			.tag:hover {
+				background: var(--gray-light);
+				color: var(--gray-dark);
 			}
 		</style>
 	</head>
@@ -95,7 +101,7 @@ const { title, description, pubDate, updatedDate, heroImage, tags, canonicalUrl,
 								{tags && tags.length > 0 && (
 									<div class="tags">
 										{tags.map((tag: string) => (
-											<span class="tag">{tag}</span>
+											<a href={`/tags/${tag}/`} class="tag">{tag}</a>
 										))}
 									</div>
 								)}

@@ -20,7 +20,7 @@ Here are three I’m excited about right now:
 
 A one-page dashboard to track time zones for remote teams or family. Each city shows as a big digital clock, with the background shifting between day and night. No logins, no friction — the browser remembers your setup, and you can even make it your start page.
 
-[Check out Clocks Dash](https://clocksdash.carrd.co/)
+[Check out Clocks Dash](https://clocksdash.com/)
 
 ### 2. Sticky Notes
 
@@ -38,7 +38,7 @@ A GitHub-style activity tracker you can embed anywhere, powered by Google Sheets
 
 Here’s an actual live embed:
 
-[https://tracker-widget.pages.dev?sheet=1aALP1DRJjlvXCQum4sBqaTZPxTyiwmReXmkHUSA57iQ&key=AIzaSyBe0mI2grltFF2S3mEA2rshFTf9j9SEovg](https://tracker-widget.pages.dev?sheet=1aALP1DRJjlvXCQum4sBqaTZPxTyiwmReXmkHUSA57iQ&key=AIzaSyBe0mI2grltFF2S3mEA2rshFTf9j9SEovg)
+<iframe src="https://tracker-widget.pages.dev?sheet=1aALP1DRJjlvXCQum4sBqaTZPxTyiwmReXmkHUSA57iQ&key=AIzaSyBe0mI2grltFF2S3mEA2rshFTf9j9SEovg"></iframe>
 
 [Check out Tracker Widget](https://trackerwidget.carrd.co/)
 
