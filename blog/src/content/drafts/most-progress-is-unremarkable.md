@@ -1,8 +1,8 @@
 ---
 title: "Most progress is unremarkable"
 description: "You’re probably making more progress than you think. You just don’t have any proof."
-draft: true
-pubDate: "February 02, 2026"
+tags: ["creator-life", "thoughts"]
+pubDate: "February 03, 2026"
 ---
 
 You’re probably making more progress than you think. You just don’t have any proof.
@@ -23,7 +23,7 @@ Most progress is unremarkable:
 
 If you don’t write that down, it disappears.
 
-I made [Winnny](https://winnny.com) for one reason: to create a record of evidence.
+I made [Winnny](https://winnny.com) for one reason: to create a record of evidence for myself.
 
 Not goals. Not affirmations. Actual facts that you showed up and moved things forward.
 
