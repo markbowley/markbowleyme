@@ -2,7 +2,7 @@
 title: "Most progress is unremarkable"
 description: "You’re probably making more progress than you think. You just don’t have any proof."
 tags: ["creator-life", "thoughts"]
-pubDate: "February 03, 2026"
+pubDate: "2026-02-03"
 ---
 
 You’re probably making more progress than you think. You just don’t have any proof.
