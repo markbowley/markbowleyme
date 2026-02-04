@@ -5,14 +5,14 @@ tags: ["creator-life", "thoughts"]
 pubDate: "2026-02-03"
 ---
 
-You’re probably making more progress than you think. You just don’t have any proof.
+You know what, you’re probably making more progress than you think. You just don’t have any proof.
 
 Your brain is great at one thing: remembering what *didn’t* get done.
 The awkward moment. The missed opportunity. The thing that’s still unfinished.
 
-What it’s terrible at? Keeping track of small wins.
+But it’s terrible at keeping track of small wins.
 
-So the default story becomes: *“I’m not really moving forward.”*
+So the default story becomes: *“I’m not really moving forward”.*
 Which is usually completely wrong.
 
 Most progress is unremarkable:

@@ -3,4 +3,4 @@
 
 export const SITE_TITLE = 'Mark Bowley';
 export const SITE_DESCRIPTION = 'Building useful things';
-export const SITE_SUBDESCRIPTION = "Thoughts on mini tools built with design, AI and product thinking"
+export const SITE_SUBDESCRIPTION = "Thoughts on building mini tools with design, AI and product thinking"
