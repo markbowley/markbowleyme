@@ -1,5 +1,5 @@
 ---
-title: "Your Brain Runs on Proof, Not Pep Talks"
+title: "Your brain runs on proof, not pep talks"
 description: "Everyone tells you to \"believe in yourself.\""
 draft: true
 pubDate: "February 02, 2026"
