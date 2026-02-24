@@ -9,7 +9,7 @@ tags: ["Side projects", "Thoughts"]
 
 I saw a post from Dan Koe recently that stopped me mid-scroll:
 
-“The ultimate moat, or the final competitive edge worth paying for, in my opinion, is an opinion. A perspective that only you can see, because the uniqueness of your life experience created it. That may just be the last thing anyone else can replicate.”
+![The ultimate moat](../../assets/moat.png)
 
 He's right. In a world of infinite content, original thinking is scarce.
 
