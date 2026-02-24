@@ -1,8 +1,7 @@
 ---
 title: "The last competitive edge you actually own"
 description: "I saw a post from Dan Koe recently that stopped me mid-scroll."
-draft: true
-pubDate: "February 224, 2026"
+pubDate: "February 24, 2026"
 heroImage: '../../assets/blog-placeholder-3.jpg'
 tags: ["Side projects", "Thoughts"]
 ---
