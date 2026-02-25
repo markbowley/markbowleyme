@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Astro blog — markdown quick reference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300;400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #F5F0E8;
+    --ink: #1A1714;
+    --mid: #6B6560;
+    --rule: #D8D0C4;
+    --accent: #C94F2C;
+    --code-bg: #EDE8DF;
+    --good: #2C6E49;
+    --tag-bg: #1A1714;
+    --tag-fg: #F5F0E8;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Fraunces', Georgia, serif;
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 17px;
+    line-height: 1.65;
+    padding: 3rem 1.5rem 6rem;
+  }
+
+  .page { max-width: 720px; margin: 0 auto; }
+
+  header {
+    border-top: 3px solid var(--ink);
+    padding-top: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .eyebrow {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin-bottom: 0.75rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 300;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+
+  h1 em { font-style: italic; color: var(--accent); }
+
+  .subtitle {
+    margin-top: 0.75rem;
+    color: var(--mid);
+    font-size: 1rem;
+    font-weight: 300;
+    max-width: 500px;
+  }
+
+  /* Tabs */
+  .tabs {
+    display: flex;
+    border-bottom: 2px solid var(--ink);
+    margin-bottom: 2.5rem;
+  }
+
+  .tab-btn {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.75rem 1.4rem;
+    color: var(--mid);
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;
+    transition: color 0.15s;
+  }
+
+  .tab-btn:hover { color: var(--ink); }
+  .tab-btn.active { color: var(--ink); border-bottom-color: var(--accent); }
+
+  .tab-panel { display: none; }
+  .tab-panel.active { display: block; }
+
+  /* Section headers */
+  h2 {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--mid);
+    margin: 3rem 0 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  /* Intro */
+  .intro {
+    background: var(--ink);
+    color: var(--bg);
+    padding: 1.5rem 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .intro p { font-size: 0.95rem; line-height: 1.7; font-weight: 300; }
+
+  .intro code {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 0.85em;
+    color: #F5C842;
+    background: rgba(255,255,255,0.08);
+    padding: 0.1em 0.35em;
+    border-radius: 2px;
+  }
+
+  /* Two-column rows */
+  .field, .syntax-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid var(--rule);
+    padding: 1.25rem 0;
+    align-items: start;
+  }
+
+  .field:last-child, .syntax-row:last-child { border-bottom: none; }
+
+  .field-left, .syntax-left { padding-right: 1.5rem; }
+  .field-right, .syntax-right { padding-left: 1.5rem; border-left: 1px solid var(--rule); }
+
+  .field-name, .syntax-label {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--accent);
+    margin-bottom: 0.2rem;
+  }
+
+  .field-type {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--mid);
+    margin-bottom: 0.5rem;
+  }
+
+  .field-desc, .syntax-desc {
+    font-size: 0.88rem;
+    color: var(--ink);
+    line-height: 1.55;
+  }
+
+  .field-desc code, .syntax-desc code, p.note code, dl.rules dd code {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 0.82em;
+    background: var(--code-bg);
+    padding: 0.1em 0.32em;
+    border-radius: 2px;
+    color: var(--ink);
+  }
+
+  /* Code blocks */
+  .code-block {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 0.8rem;
+    background: var(--code-bg);
+    padding: 0.9rem 1rem;
+    line-height: 1.75;
+    border-left: 3px solid var(--accent);
+    white-space: pre;
+    overflow-x: auto;
+  }
+
+  .code-block .delimiter { color: var(--mid); }
+  .code-block .key { color: var(--ink); font-weight: 500; }
+  .code-block .val-string { color: var(--good); }
+  .code-block .val-bool { color: #8B5E00; }
+  .code-block .val-date { color: #4A6FA5; }
+  .code-block .val-array { color: var(--good); }
+  .code-block .comment { color: var(--mid); font-style: italic; }
+  .code-block .syntax { color: var(--accent); font-weight: 600; }
+  .code-block .md-em { font-style: italic; }
+  .code-block .md-link { color: #4A6FA5; }
+  .code-block .md-dim { color: var(--mid); }
+
+  /* Tags */
+  .tag {
+    display: inline-block;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 0.62rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.2em 0.55em;
+    border-radius: 2px;
+    margin-right: 0.3rem;
+    vertical-align: middle;
+    background: var(--tag-bg);
+    color: var(--tag-fg);
+  }
+
+  .tag.optional { background: transparent; color: var(--mid); border: 1px solid var(--rule); }
+  .tag.common { background: var(--accent); color: white; }
+
+  p.note {
+    font-size: 0.82rem;
+    color: var(--mid);
+    margin-top: 0.6rem;
+    line-height: 1.55;
+    font-style: italic;
+  }
+
+  .full-example {
+    background: var(--code-bg);
+    padding: 1.75rem;
+    border-top: 3px solid var(--ink);
+    margin-top: 1rem;
+  }
+
+  .full-example .code-block { background: transparent; border-left: none; padding: 0; }
+
+  dl.rules {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.6rem 1.5rem;
+    font-size: 0.88rem;
+    margin-top: 0.5rem;
+  }
+
+  dl.rules dt {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 0.82rem;
+    color: var(--accent);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  dl.rules dd { color: var(--ink); }
+
+  /* Rendered preview */
+  .preview-label {
+    font-family: 'Azeret Mono', monospace;
+    font-size: 0.62rem;
+    color: var(--mid);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0.75rem 0 0.3rem;
+  }
+
+  .preview {
+    background: white;
+    border: 1px solid var(--rule);
+    padding: 0.75rem 1rem;
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+  .preview h1 { font-size: 1.3em; font-weight: 300; border: none; padding: 0; margin: 0; letter-spacing: -0.01em; font-family: 'Fraunces', Georgia, serif; }
+  .preview h2 { font-size: 1.1em; font-weight: 500; border: none; padding: 0; margin: 0.3em 0 0; text-transform: none; color: var(--ink); font-family: 'Fraunces', Georgia, serif; letter-spacing: 0; }
+  .preview h3 { font-size: 0.95em; font-weight: 600; border: none; padding: 0; margin: 0.3em 0 0; text-transform: none; color: var(--ink); font-family: 'Fraunces', Georgia, serif; letter-spacing: 0; }
+  .preview p { margin: 0; }
+  .preview strong { font-weight: 700; }
+  .preview em { font-style: italic; }
+  .preview ul, .preview ol { padding-left: 1.3em; margin: 0; }
+  .preview li { margin: 0.1em 0; }
+  .preview a { color: #4A6FA5; }
+  .preview blockquote { border-left: 3px solid var(--rule); margin: 0; padding: 0.2rem 0 0.2rem 0.85rem; color: var(--mid); font-style: italic; }
+  .preview hr { border: none; border-top: 1px solid var(--rule); margin: 0.5rem 0; }
+  .preview code { font-family: 'Azeret Mono', monospace; font-size: 0.85em; background: var(--code-bg); padding: 0.1em 0.3em; }
+  .preview pre { background: var(--code-bg); padding: 0.6rem 0.75rem; font-family: 'Azeret Mono', monospace; font-size: 0.8em; overflow-x: auto; margin: 0; }
+  .img-placeholder { display: block; background: var(--code-bg); border: 1px dashed var(--rule); text-align: center; padding: 0.6rem; font-family: 'Azeret Mono', monospace; font-size: 0.72rem; color: var(--mid); }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    font-family: 'Azeret Mono', monospace;
+    font-size: 0.68rem;
+    color: var(--mid);
+    letter-spacing: 0.04em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  @media (max-width: 560px) {
+    .field, .syntax-row { grid-template-columns: 1fr; }
+    .field-right, .syntax-right {
+      padding-left: 0;
+      border-left: none;
+      border-top: 1px dashed var(--rule);
+      padding-top: 1rem;
+      margin-top: 0.75rem;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <p class="eyebrow">Quick reference · Astro blog</p>
+    <h1>Markdown <em>reference</em></h1>
+    <p class="subtitle">Frontmatter fields and blog content syntax — everything you need to write and ship Astro blog posts.</p>
+  </header>
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="switchTab('frontmatter', this)">Frontmatter fields</button>
+    <button class="tab-btn" onclick="switchTab('content', this)">Blog content</button>
+  </div>
+
+  <!-- TAB 1: FRONTMATTER -->
+  <div id="tab-frontmatter" class="tab-panel active">
+
+    <div class="intro">
+      <p>Frontmatter is YAML. It lives at the very top of the file, wrapped in two sets of <code>---</code>. Astro reads it at build time. Your layout accesses it via <code>Astro.props</code> or the <code>frontmatter</code> object. None of this runs in the browser — it's all build-time data.</p>
+    </div>
+
+    <h2>Common fields</h2>
+
+    <div class="field">
+      <div class="field-left">
+        <div class="field-name">title</div>
+        <div class="field-type">string &nbsp;<span class="tag common">common</span></div>
+        <div class="field-desc">The post title. Used in <code>&lt;title&gt;</code>, OG tags, and your post list. Always wrap in quotes if it contains a colon.</div>
+        <p class="note">Colons break YAML. Use quotes: <code>title: "Design: a history"</code></p>
+      </div>
+      <div class="field-right">
+        <div class="code-block"><span class="delimiter">---</span>
+<span class="key">title</span>: <span class="val-string">"Why I ditched Figma"</span>
+<span class="delimiter">---</span></div>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="field-left">
+        <div class="field-name">description</div>
+        <div class="field-type">string &nbsp;<span class="tag common">common</span></div>
+        <div class="field-desc">The meta description. Used for SEO and social previews. Aim for 120–155 characters. You have to wire it up in your layout's <code>&lt;head&gt;</code> — Astro doesn't do it automatically.</div>
+      </div>
+      <div class="field-right">
+        <div class="code-block"><span class="key">description</span>: <span class="val-string">"After 8 years, here's
+  what finally replaced it."</span></div>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="field-left">
+        <div class="field-name">pubDate</div>
+        <div class="field-type">date &nbsp;<span class="tag common">common</span></div>
+        <div class="field-desc">Publication date. Use ISO format: <code>YYYY-MM-DD</code>. Content collections can validate this as a real <code>Date</code> type if you define a schema. Without a schema, it arrives as a string.</div>
+        <p class="note">You can also write <code>2024-04-12T09:00:00Z</code> if timezone matters.</p>
+      </div>
+      <div class="field-right">
+        <div class="code-block"><span class="key">pubDate</span>: <span class="val-date">2024-04-12</span></div>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="field-left">
+        <div class="field-name">draft</div>
+        <div class="field-type">boolean &nbsp;<span class="tag optional">optional</span></div>
+        <div class="field-desc">Set to <code>true</code> to mark a post as a draft. Astro won't automatically hide it — you need to filter it out in your page query using <code>getCollection</code> with a filter function.</div>
+        <p class="note">Add this to your post list query: <code>filter: (p) => !p.data.draft</code></p>
+      </div>
+      <div class="field-right">
+        <div class="code-block"><span class="key">draft</span>: <span class="val-bool">true</span>
+
+<span class="comment"># In your .astro page:</span>
+<span class="comment"># getCollection('blog',</span>
+<span class="comment">#   ({ data }) => !data.draft</span>
+<span class="comment"># )</span></div>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="field-left">
+        <div class="field-name">tags</div>
+        <div class="field-type">string[] &nbsp;<span class="tag optional">optional</span></div>
+        <div class="field-desc">Array of topic tags. YAML arrays can be written inline or as a list. No spaces in tag names unless you quote them. These are just data — you decide how to render and link them.</div>
+      </div>
+      <div class="field-right">
+        <div class="code-block"><span class="comment"># Inline (compact)</span>
+<span class="key">tags</span>: <span class="val-array">["design", "tools"]</span>
+
+<span class="comment"># Or as a list</span>
+<span class="key">tags</span>:
+  - <span class="val-array">design</span>
+  - <span class="val-array">tools</span></div>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="field-left">
+        <div class="field-name">image / heroImage</div>
+        <div class="field-type">string &nbsp;<span class="tag optional">optional</span></div>
+        <div class="field-desc">Path to the cover image. The field name is whatever you call it — there's no Astro default. Common names: <code>image</code>, <code>heroImage</code>, <code>cover</code>. Use a path relative to <code>/public</code> or import it properly for Astro's image optimisation.</div>
+      </div>
+      <div class="field-right">
+        <div class="code-block"><span class="key">heroImage</span>: <span class="val-string">"/images/cover.jpg"</span></div>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="field-left">
+        <div class="field-name">author</div>
+        <div class="field-type">string &nbsp;<span class="tag optional">optional</span></div>
+        <div class="field-desc">Author name. On a personal blog it's redundant — skip it unless your layout needs it for schema.org structured data or RSS.</div>
+      </div>
+      <div class="field-right">
+        <div class="code-block"><span class="key">author</span>: <span class="val-string">"Mark Bowley"</span></div>
+      </div>
+    </div>
+
+    <div class="field">
+      <div class="field-left">
+        <div class="field-name">updatedDate</div>
+        <div class="field-type">date &nbsp;<span class="tag optional">optional</span></div>
+        <div class="field-desc">When the post was last substantially edited. Good for SEO and for showing readers the content is maintained. Same format as <code>pubDate</code>.</div>
+      </div>
+      <div class="field-right">
+        <div class="code-block"><span class="key">pubDate</span>:     <span class="val-date">2024-01-10</span>
+<span class="key">updatedDate</span>: <span class="val-date">2024-04-12</span></div>
+      </div>
+    </div>
+
+    <h2>YAML rules worth knowing</h2>
+
+    <dl class="rules">
+      <dt>Quotes</dt>
+      <dd>Use them whenever the value contains a colon, hash, or starts with a special character. Single or double both work.</dd>
+      <dt>Booleans</dt>
+      <dd>Write as <code>true</code> or <code>false</code>, no quotes. Quoting them makes them strings.</dd>
+      <dt>Multiline</dt>
+      <dd>Use <code>|</code> to preserve line breaks, <code>&gt;</code> to fold them into a single line.</dd>
+      <dt>Indentation</dt>
+      <dd>Always spaces, never tabs. Lists indent 2 spaces under their key.</dd>
+      <dt>Null / empty</dt>
+      <dd>Leave blank or write <code>null</code>. Both evaluate to <code>undefined</code> in your component.</dd>
+    </dl>
+
+    <h2>A complete example</h2>
+
+    <div class="full-example">
+      <div class="code-block"><span class="delimiter">---</span>
+<span class="key">title</span>:        <span class="val-string">"Designing for real people"</span>
+<span class="key">description</span>: <span class="val-string">"Why I stopped designing in Figma
+               and started sketching on paper."</span>
+<span class="key">pubDate</span>:     <span class="val-date">2025-02-20</span>
+<span class="key">updatedDate</span>: <span class="val-date">2025-02-25</span>
+<span class="key">heroImage</span>:   <span class="val-string">"/images/paper-sketches.jpg"</span>
+<span class="key">tags</span>:         <span class="val-array">["design", "process", "tools"]</span>
+<span class="key">draft</span>:        <span class="val-bool">false</span>
+<span class="delimiter">---</span>
+
+<span class="comment"># Your markdown content starts here</span></div>
+    </div>
+
+    <h2>Accessing in your layout</h2>
+
+    <div class="code-block"><span class="comment">// In your BlogPost.astro layout</span>
+<span class="key">const</span> { title, description, pubDate, heroImage } = <span class="val-string">Astro.props</span>;
+
+<span class="comment">// Or via content collections (recommended)</span>
+<span class="key">const</span> { data } = Astro.props.entry;
+<span class="key">const</span> { title, pubDate } = data;</div>
+
+  </div><!-- /tab-frontmatter -->
+
+
+  <!-- TAB 2: BLOG CONTENT -->
+  <div id="tab-content" class="tab-panel">
+
+    <div class="intro">
+      <p>Everything below the closing <code>---</code> is your post content, written in standard Markdown. Astro compiles it to HTML at build time. What you write maps directly to HTML elements — your CSS styles them.</p>
+    </div>
+
+    <h2>Headings</h2>
+
+    <div class="syntax-row">
+      <div class="syntax-left">
+        <div class="syntax-label">H1 – H3</div>
+        <div class="syntax-desc">Use <code>#</code> hashes before text. One hash = H1, two = H2, three = H3. Your post title is usually H1 — most themes render it from frontmatter, so start body copy at H2.</div>
+        <p class="note">Don't skip heading levels (e.g. H2 → H4). Bad for screen readers and SEO.</p>
+      </div>
+      <div class="syntax-right">
+        <div class="code-block"><span class="syntax">#</span> <span class="md-text">Post title (H1)</span>
+<span class="syntax">##</span> <span class="md-text">Section heading (H2)</span>
+<span class="syntax">###</span> <span class="md-text">Sub-section (H3)</span></div>
+        <div class="preview-label">renders as</div>
+        <div class="preview">
+          <h1>Post title</h1>
+          <h2>Section heading</h2>
+          <h3>Sub-section</h3>
+        </div>
+      </div>
+    </div>
+
+    <h2>Emphasis</h2>
+
+    <div class="syntax-row">
+      <div class="syntax-left">
+        <div class="syntax-label">Bold &amp; italic</div>
+        <div class="syntax-desc">Wrap text in asterisks. One pair = italic, two pairs = bold. You can combine them. Underscores also work but asterisks are more consistent across parsers.</div>
+      </div>
+      <div class="syntax-right">
+        <div class="code-block"><span class="syntax">*</span><span class="md-em">italic</span><span class="syntax">*</span>
+<span class="syntax">**</span>bold<span class="syntax">**</span>
+<span class="syntax">***</span><span class="md-em">bold italic</span><span class="syntax">***</span></div>
+        <div class="preview-label">renders as</div>
+        <div class="preview">
+          <p><em>italic</em> &nbsp;&nbsp; <strong>bold</strong> &nbsp;&nbsp; <strong><em>bold italic</em></strong></p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Lists</h2>
+
+    <div class="syntax-row">
+      <div class="syntax-left">
+        <div class="syntax-label">Unordered</div>
+        <div class="syntax-desc">Use <code>-</code> at the start of each line. Indent 2 spaces for nested items. Blank lines between items wrap each in a <code>&lt;p&gt;</code> — leave them out for tighter spacing.</div>
+      </div>
+      <div class="syntax-right">
+        <div class="code-block"><span class="syntax">-</span> First item
+<span class="syntax">-</span> Second item
+  <span class="syntax">-</span> Nested item
+<span class="syntax">-</span> Third item</div>
+        <div class="preview-label">renders as</div>
+        <div class="preview">
+          <ul>
+            <li>First item</li>
+            <li>Second item<ul><li>Nested item</li></ul></li>
+            <li>Third item</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="syntax-row">
+      <div class="syntax-left">
+        <div class="syntax-label">Ordered</div>
+        <div class="syntax-desc">Start each line with a number and a dot. The actual numbers don't matter — Markdown counts them for you. You can write <code>1.</code> for every line and it'll render correctly.</div>
+      </div>
+      <div class="syntax-right">
+        <div class="code-block"><span class="syntax">1.</span> First step
+<span class="syntax">2.</span> Second step
+<span class="syntax">3.</span> Third step</div>
+        <div class="preview-label">renders as</div>
+        <div class="preview">
+          <ol>
+            <li>First step</li>
+            <li>Second step</li>
+            <li>Third step</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <h2>Links</h2>
+
+    <div class="syntax-row">
+      <div class="syntax-left">
+        <div class="syntax-label">Inline links</div>
+        <div class="syntax-desc">Square brackets for the label, round brackets for the URL. You can add a tooltip as a quoted string after the URL.</div>
+        <p class="note">For internal Astro links, use root-relative paths like <code>/blog/my-post</code> — not full URLs.</p>
+      </div>
+      <div class="syntax-right">
+        <div class="code-block"><span class="md-dim">[</span><span class="md-link">link text</span><span class="md-dim">](</span>https://example.com<span class="md-dim">)</span>
+
+<span class="md-dim">[</span><span class="md-link">with tooltip</span><span class="md-dim">](</span>https://example.com <span class="val-string">"tip"</span><span class="md-dim">)</span>
+
+<span class="md-dim">[</span><span class="md-link">internal page</span><span class="md-dim">](</span>/blog/my-post<span class="md-dim">)</span></div>
+        <div class="preview-label">renders as</div>
+        <div class="preview">
+          <p><a href="#">link text</a> &nbsp; <a href="#" title="tip">with tooltip</a> &nbsp; <a href="#">internal page</a></p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Images</h2>
+
+    <div class="syntax-row">
+      <div class="syntax-left">
+        <div class="syntax-label">Basic image</div>
+        <div class="syntax-desc">Like a link, but with a <code>!</code> in front. Alt text goes in the square brackets — don't leave it empty. Path should point to your <code>/public</code> folder.</div>
+        <p class="note">For automatic optimisation (WebP, lazy-loading, sizing), switch to an <code>.mdx</code> file and use Astro's <code>&lt;Image /&gt;</code> component instead.</p>
+      </div>
+      <div class="syntax-right">
+        <div class="code-block"><span class="md-dim">![</span><span class="md-link">descriptive alt text</span><span class="md-dim">]</span>
+<span class="md-dim"> (</span>/images/photo.jpg<span class="md-dim">)</span>
+
+<span class="comment"># With a title attribute:</span>
+<span class="md-dim">![</span><span class="md-link">alt text</span><span class="md-dim">](</span>/images/photo.jpg <span class="val-string">"caption"</span><span class="md-dim">)</span></div>
+        <div class="preview-label">renders as</div>
+        <div class="preview">
+          <div class="img-placeholder">[ image: descriptive alt text ]</div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Blockquotes</h2>
+
+    <div class="syntax-row">
+      <div class="syntax-left">
+        <div class="syntax-label">Blockquote</div>
+        <div class="syntax-desc">Prefix lines with <code>&gt;</code>. Good for pull quotes or callouts. You can nest them with <code>&gt;&gt;</code> and use other markdown syntax inside.</div>
+      </div>
+      <div class="syntax-right">
+        <div class="code-block"><span class="syntax">&gt;</span> This is a blockquote.
+<span class="syntax">&gt;</span> It can span multiple lines.
+<span class="syntax">&gt;</span>
+<span class="syntax">&gt;</span> Even multiple paragraphs.</div>
+        <div class="preview-label">renders as</div>
+        <div class="preview">
+          <blockquote>
+            <p>This is a blockquote. It can span multiple lines.</p>
+            <br>
+            <p>Even multiple paragraphs.</p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <h2>Code</h2>
+
+    <div class="syntax-row">
+      <div class="syntax-left">
+        <div class="syntax-label">Inline &amp; fenced blocks</div>
+        <div class="syntax-desc">Single backtick for inline code. Triple backticks for a fenced block. Add the language name after the opening fence for syntax highlighting — Astro uses Shiki by default, so it works out of the box.</div>
+      </div>
+      <div class="syntax-right">
+        <div class="code-block"><span class="comment"># Inline</span>
+Use <span class="syntax">`</span>const x = 5<span class="syntax">`</span> in your component.
+
+<span class="comment"># Fenced block</span>
+<span class="syntax">```</span>js
+const greeting = "hello";
+console.log(greeting);
+<span class="syntax">```</span></div>
+        <div class="preview-label">renders as</div>
+        <div class="preview">
+          <p>Use <code>const x = 5</code> in your component.</p>
+          <br>
+          <pre>const greeting = "hello";
+console.log(greeting);</pre>
+        </div>
+      </div>
+    </div>
+
+    <h2>Horizontal rule</h2>
+
+    <div class="syntax-row">
+      <div class="syntax-left">
+        <div class="syntax-label">Section divider</div>
+        <div class="syntax-desc">Three or more dashes on their own line renders as an <code>&lt;hr&gt;</code>. Leave a blank line above and below — otherwise the line above it can be read as a heading.</div>
+      </div>
+      <div class="syntax-right">
+        <div class="code-block">Some content above.
+
+<span class="syntax">---</span>
+
+Some content below.</div>
+        <div class="preview-label">renders as</div>
+        <div class="preview">
+          <p>Some content above.</p>
+          <hr>
+          <p>Some content below.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2>Line breaks &amp; paragraphs</h2>
+
+    <div class="syntax-row">
+      <div class="syntax-left">
+        <div class="syntax-label">Spacing rules</div>
+        <div class="syntax-desc">A blank line between blocks creates a new paragraph. A single line break in source is ignored — treated as a space. To force a line break within a paragraph, end the line with two spaces.</div>
+        <p class="note">This trips people up constantly. If two paragraphs appear merged, you forgot the blank line between them.</p>
+      </div>
+      <div class="syntax-right">
+        <div class="code-block"><span class="comment"># Two paragraphs</span>
+First paragraph.
+
+Second paragraph.
+
+<span class="comment"># Forced line break</span>
+Line one.  <span class="md-dim">← two trailing spaces</span>
+Line two on a new line.</div>
+      </div>
+    </div>
+
+  </div><!-- /tab-content -->
+
+  <footer>
+    <span>Astro markdown quick reference</span>
+    <span>Astro v4+ · standard markdown + content collections</span>
+  </footer>
+
+</div>
+
+<script>
+  function switchTab(name, btn) {
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('tab-' + name).classList.add('active');
+    btn.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
