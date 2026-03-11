@@ -97,7 +97,7 @@ Accept the discomfort. This isn’t a phase you power through to get back to "no
 
 Focus on fundamentals. When everything’s in flux, go back to basics. What makes something GOOD? What creates value for people? What’s a story worth telling? Those don’t change, even when the tools do.
 
-##My honest closing
+## My honest closing
 I don’t know if what I’m building today will matter in a year. But I know doing nothing guarantees it won’t.
 
 So I’m building anyway. In the fog. Anxious and energised. Paralysed and liberated. Shipping prototypes, testing ideas. Trying to stay nimble while the ground shifts. Building some muscle. 
