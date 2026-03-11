@@ -11,7 +11,7 @@ This isn’t imposter syndrome. This is the reality of creating anything right n
 
 And weirdly? That might be the most honest thing you can say in 2026.
 
-## Two potential futures
+### Two potential futures
 There are at least two competing visions of what’s next, and both feel equally plausible:
 
 **1. An agent-first world**<br>
@@ -30,7 +30,7 @@ The only thing that transfers is judgment, taste, and adaptability. Everything e
 
 Both of these futures could be true. Parts of both are already true. Which makes planning impossible.
 
-## This isn’t the 90s or 2000s
+### This isn’t the 90s or 2000s
 Some people think we’re in a moment like when computers took off in the 90s, or when the internet exploded in the 2000s. I don’t think that’s right. This feels more like the Industrial Revolution.
 
 Computers and the internet are still here. You learned Photoshop in 1998? Still useful. You learned HTML in 2002? Still relevant.
@@ -45,7 +45,7 @@ That’s the scale we’re dealing with.
 
 > We’re trying to navigate it in real-time, with quarterly planning cycles and next month’s bills to pay.
 
-## Why this feels different
+### Why this feels different
 This isn’t just "tech changes fast" anxiety. Past shifts had clearer patterns. When web displaced print design, you learned web design. When mobile exploded, you learned app design. When SaaS grew, you learned subscription models.
 
 The path forward was visible, even if hard. Right now? The path keeps shifting mid-step.
@@ -60,7 +60,7 @@ They’re asking the same questions I am: Will this still matter? Should I inves
 
 Nobody’s buying with confidence right now. Everyone’s hedging.
 
-## The paradox we’re all living
+### The paradox we’re all living
 Here’s the truth: we’re all feeling this tension.
 Paralysed and liberated.
 When
@@ -80,7 +80,7 @@ The people who tell you they’ve figured it out? They’re either lying or delu
 
 That’s actually kind of freeing once you accept it.
 
-## So what do you actually do?
+### So what do you actually do?
 I can’t give you a roadmap. Nobody can. But here’s what makes sense to me in the fog:
 
 Keep building. Not because you’re certain it’ll work. Because staying still is guaranteed failure. The people who stop experimenting now will wake up in two years completely lost.
@@ -97,7 +97,7 @@ Accept the discomfort. This isn’t a phase you power through to get back to "no
 
 Focus on fundamentals. When everything’s in flux, go back to basics. What makes something GOOD? What creates value for people? What’s a story worth telling? Those don’t change, even when the tools do.
 
-## My honest closing
+### My honest closing
 I don’t know if what I’m building today will matter in a year. But I know doing nothing guarantees it won’t.
 
 So I’m building anyway. In the fog. Anxious and energised. Paralysed and liberated. Shipping prototypes, testing ideas. Trying to stay nimble while the ground shifts. Building some muscle. 
