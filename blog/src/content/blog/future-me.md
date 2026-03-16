@@ -2,7 +2,7 @@
 title: "A message from future me"
 description: "Hey you, it’s...you, six months from now."
 heroImage: '../../assets/future-me.jpg'
-pubDate: "March 16, 2026"
+pubDate: 2026-03-16
 tags: ["Thoughts"]
 ---
 
