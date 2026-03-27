@@ -1,7 +1,7 @@
 ---
 title: "What if"
 description: "What if AI creates more jobs, not fewer?"
-pubDate: 2026-03-27
+pubDate: "2026-03-27"
 heroImage: '../../assets/blog-placeholder-3.jpg'
 tags: ["thoughts", "ai"]
 ---
