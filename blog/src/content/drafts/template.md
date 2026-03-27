@@ -2,7 +2,7 @@
 title: "title"
 description: "description"
 draft: true
-pubDate: 2026-MM-DD
+pubDate: 2026-01-01
 heroImage: '../../assets/blog-placeholder-3.jpg'
 tags: ["thoughts", "design"]
 ---
