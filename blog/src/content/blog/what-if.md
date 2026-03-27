@@ -2,10 +2,11 @@
 title: "What if"
 description: "What if AI creates more jobs, not fewer?"
 pubDate: 2026-03-27
+heroImage: '../../assets/everything-ok.jpg'
 tags: ["thoughts", "ai"]
 ---
 
-Right now, everyone’s anxious.
+Right now, everyone’s uncomfortable.
 
 Will AI take our jobs? Are we all about to be obsolete? Should we be panicking?
 
@@ -42,9 +43,9 @@ Work that required too much human time to be worth it. Problems that were too ex
 
 Suddenly, they’re possible. And somebody needs to do them.
 
-There’s a “but’ coming...
+There’s a “but” coming...
 
-But nobody actually knows how this plays out.
+But... nobody actually knows how this plays out.
 
 It could go the other way. Automation could genuinely hollow out entire job categories and leave people behind.
 
