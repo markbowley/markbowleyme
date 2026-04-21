@@ -1,6 +1,6 @@
 ---
-title: "Hello, anybody spot this?"
-description: "Where’s all the power going to come from for AI?"
+title: "Make the most of it"
+description: "Right now we’re in the golden moment of AI. It won’t (can’t) last."
 pubDate: 2026-04-21
 heroImage: '../../assets/blog-placeholder-3.jpg'
 tags: ["thoughts", "ai"]
