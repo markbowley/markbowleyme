@@ -11,7 +11,7 @@ Been sitting with a thought recently.
 
 Right now we’re in the golden moment of AI. The gold rush. The efficiency gains. The constant new features. 
 
-At the same time everyone’s worried about their job. Their relevance. We’re all anxiously upskilling and experimenting to stay ahead.
+At the same time everyone’s worried about their job. Their relevance. Some are anxiously upskilling and experimenting to stay ahead.
 
 But there’s a much bigger question sitting in plain sight that almost nobody's talking about.
 
@@ -43,14 +43,16 @@ What if data centers start competing with homes and hospitals for electricity? W
 
 It’s not a hypothetical future. In some regions, it’s already happening. Data centers are straining local power grids. Energy companies are struggling to meet demand.
 
-I don't have solutions. I’m not an energy policy expert. I\m not trying to add to the doom mongering on AI either.
+I don't have solutions. I’m not an energy policy expert. I’m not trying to add to the doom mongering on AI either.
 
 I’m just someone watching this unfold and wondering why the question isn’t front and center in every conversation about AI’s future.
 
 At some point, we’re going to hit a wall and be forced to choose. I say “we” but we all know I mean the people or companies in positions of power. 
 
 Slow down AI development? Not likely. 
+
 Serious environmental compromises? Probably. Trump will allow this, that’s for sure. 
+
 Power shortages? Most likely, and it will be everyday people who suffer.
 
 Right now we’re in the golden moment of AI. It won’t (can’t) last, so it’s even more urgent for us to make the most of it. Anyone who delays may not get the same opportunity in 2-3 years.
