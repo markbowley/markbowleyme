@@ -2,7 +2,7 @@
 title: "It all started with a blackout"
 description: "No internet. No heating. Candles by mid-afternoon. And it was fine."
 pubDate: 2026-05-05
-heroImage: '../../assets/candle.jpg'
+heroImage: '../../assets/candle.jpeg'
 tags: ["thoughts", "attention", "intention"]
 ---
 

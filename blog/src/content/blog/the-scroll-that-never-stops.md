@@ -2,7 +2,7 @@
 title: "The scroll that never stops"
 description: "You can delete the app and still be scrolling. The technology was never really the problem."
 pubDate: 2026-05-12
-heroImage: '../../assets/scroll.jpg'
+heroImage: '../../assets/scroll.jpeg'
 tags: ["thoughts", "attention", "social-media"]
 ---
 

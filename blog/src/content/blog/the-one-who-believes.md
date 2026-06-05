@@ -2,7 +2,7 @@
 title: "The one who believes"
 description: "Most things that make it through to the other side have someone who won't let it die quietly."
 pubDate: 2026-05-19
-heroImage: '../../assets/believe.jpg'
+heroImage: '../../assets/believe.jpeg'
 tags: ["thoughts", "making", "creator-life"]
 ---
 

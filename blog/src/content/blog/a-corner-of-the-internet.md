@@ -2,7 +2,7 @@
 title: "A corner of the internet"
 description: "We traded ownership for reach when the platforms arrived. Now people are slowly taking it back."
 pubDate: 2026-06-01
-heroImage: '../../assets/corner.jpg'
+heroImage: '../../assets/corner.jpeg'
 tags: ["thoughts", "indie", "web"]
 ---
 

@@ -2,7 +2,7 @@
 title: "It's not your fault"
 description: "I got a marketing email about brain rot. The irony was hard to miss."
 pubDate: 2026-04-27
-heroImage: '../../assets/headache.jpg'
+heroImage: '../../assets/headache.jpeg'
 tags: ["thoughts", "attention", "technology"]
 ---
 

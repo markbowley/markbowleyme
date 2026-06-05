@@ -2,7 +2,7 @@
 title: "I've been making"
 description: "An update on what I've been busy with – Projjector, Sparkstation, and FullyFed."
 pubDate: 2026-05-27
-heroImage: '../../assets/projjector.jpg'
+heroImage: '../../assets/projjector.jpeg'
 tags: ["making", "products", "update"]
 ---
 

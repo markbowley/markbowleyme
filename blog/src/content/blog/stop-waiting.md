@@ -27,7 +27,7 @@ And you needed finance. Or time carved out of someone else's priorities.
 
 Even personal ideas had a cost. Often too big to try casually.
 
-Now I can manifest ideas in an afternoon without asking permission. Without almost any cost. Just a Claude subscription, free hosting, and a bit of my time (my first 20 prototypes were actually done with free AI plans.
+Now I can manifest ideas in an afternoon without asking permission. Without almost any cost. Just a Claude subscription, free hosting, and a bit of my time (my first 20 prototypes were actually done with free AI plans).
 
 That's the real unlock we're living through.
 

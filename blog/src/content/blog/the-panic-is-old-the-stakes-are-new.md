@@ -2,7 +2,7 @@
 title: "The panic is old, the stakes are new"
 description: "Every generation inherits a version of this argument. And every generation loses it."
 pubDate: 2026-06-03
-heroImage: '../../assets/machine.jpg'
+heroImage: '../../assets/machine.jpeg'
 tags: ["thoughts", "technology", "attention"]
 ---
 

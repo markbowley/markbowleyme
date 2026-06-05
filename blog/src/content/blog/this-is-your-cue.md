@@ -2,7 +2,7 @@
 title: "This is your cue"
 description: "If you've been reading for a while but never said hello – today's the day."
 pubDate: 2026-05-07
-heroImage: '../../assets/hello.jpg'
+heroImage: '../../assets/hello.jpeg'
 tags: ["newsletter", "community"]
 ---
 

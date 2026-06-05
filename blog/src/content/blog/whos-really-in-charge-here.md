@@ -2,7 +2,7 @@
 title: "Who's really in charge here?"
 description: "If you work for yourself, you probably got into it for some version of freedom. So why are the platforms calling the shots?"
 pubDate: 2026-04-28
-heroImage: '../../assets/sign-exclaim.jpg'
+heroImage: '../../assets/sign-exclaim.jpeg'
 tags: ["thoughts", "indie", "attention"]
 ---
 
