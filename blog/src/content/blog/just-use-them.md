@@ -2,7 +2,7 @@
 title: "You can just... use them"
 description: "Have you ever reached that point? The point where you stop being just a “user” and actually become one in a different sense."
 pubDate: 2026-07-06
-heroImage: '../../assets/machine2.jpg'
+heroImage: '../../assets/machine2.jpeg'
 tags: ["thoughts"]
 ---
 
