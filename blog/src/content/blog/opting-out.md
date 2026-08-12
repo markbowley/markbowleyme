@@ -1,6 +1,6 @@
 ---
 title: "Opting out of complexity"
-description: "I’ve always been drawn to making tools that do a lot with very little"
+description: "I've always been drawn to making tools that do a lot with very little"
 pubDate: 2026-06-20
 heroImage: '../../assets/more.jpg'
 tags: ["thoughts", "products"]
