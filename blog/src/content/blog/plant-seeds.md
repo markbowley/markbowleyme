@@ -26,7 +26,7 @@ None of those moments felt like ‘working on the business’. They felt more li
 
 A single micro moment doesn’t do much on its own. Thirty minutes of poking around at an idea is sort of... nothing. But five, fifteen, thirty minutes, repeated over months, without insisting “I need a proper run at this“, compounds into something real.
 
-Winnny.com started that way. So did Hndmark.com. Neither began as a long-term plan. They began as small, half-formed ideas I kept iterating on. No calendar space was cleared for them.
+[Winnny.com](https://winnny.com/) started that way. So did [Hndmark.com](https://hndmark.com/). Neither began as a long-term plan. They began as small, half-formed ideas I kept iterating on. No calendar space was cleared for them.
 
 Waiting for the right moment seems like it’s the efficient thing to do. You’re not spending, so it’s not costing you anything. 
 
@@ -41,7 +41,3 @@ If there’s an idea you keep circling back to, please stop waiting for the vers
 Give it thirty minutes today. Then again tomorrow, or next week. Let it sit half-finished for a while if it needs to. Park it in your box of ideas. 
 
 The point isn’t to finish it in the micro moments. The point is to make sure that when you’re finally ready to invest in one (or many) ideas, you’re not starting from zero.
-
---
-
-Photo by [Rachel Reinhardt](https://unsplash.com/photos/a-group-of-seedlings-sprouting-from-seed-bags-xWD9BbsgHy4?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on Unsplash
