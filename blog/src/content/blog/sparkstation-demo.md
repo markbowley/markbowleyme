@@ -17,7 +17,7 @@ Getting the software right is one thing, getting the hardware right is another, 
 
 The reason is I’d decided to make [Sparkstation](https://sparkstation.live/) a blend of my software and homemade, retro hardware (consoles mainly, not computers). Yes, this is next-level ‘making’…
 
-![alt text](/images/sparkstation-demo.webp "Sparkstation demo")
+![alt text](/blog/source/assets/sparkstation-demo.webp "Sparkstation demo")
 
 I probably shouldn’t have taken so much on for one of my first in-person product demo’s…but [Create With](https://www.createwith.com/) gave me permission to demo it at their conference last week. I’d been teasing the idea to them for a while, so I had to see it through.
 
