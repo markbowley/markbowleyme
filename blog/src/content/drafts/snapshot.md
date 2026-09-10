@@ -15,7 +15,7 @@ It’s practically a national pastime. We can spend ten minutes discussing the w
 
 So perhaps we shouldn’t be surprised by a headline like this. 
 
-![alt text]('../../assets/rain.jpg "Headline from 10 Sept 2026")
+![alt text](../../assets/rain.jpg "Headline from 10 Sept 2026")
 
 Except that, just three weeks earlier, the headlines were asking when the heat was going to stop.
 
