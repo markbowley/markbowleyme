@@ -12,15 +12,13 @@ Recently, they’ve started to quote former/current Anthropic employees, warning
 
 People often take those warnings at face value. Conversations with friends, family, across the dinner table, all become a horror story and something else to worry about. It's hard to argue otherwise. It sounds cavalier. 
 
-A clue has emerged this week an accusation this week that may help. Anthropic (the company behind Claude) is accused of quietly building a machine that benefits from AI looking dangerous.
+A [clue](https://x.com/kevinnbass/status/2099621874279817638) has emerged this week that may help. Anthropic (the company behind Claude) is accused of quietly building a machine that benefits from AI looking dangerous.
 
 Here’s the argument, stripped down.
 
 Anthropic is growing fast. Money flows into the AI-safety organisations around it. Those organisations warn that AI is getting scarier. The media amplifies it. Politicians respond by demanding more regulation. And of course the company that’s already deep in “AI safety“ is best placed to handle the new rules. Repeat that as a loop, and you have a self-serving situation. 
 
-Strip away the tech angle and it’s just [regulatory capture](https://en.wikipedia.org/wiki/Regulatory_capture), which isn’t new or exotic.
-
-You’ll recognise the shape from two other places. 
+Strip away the tech angle and it’s just [regulatory capture](https://en.wikipedia.org/wiki/Regulatory_capture), which isn’t new or exotic. You’ll recognise the shape from two other places. 
 
 Politics runs on it constantly. Manufacture the fear, then arrive selling the solution. Terror threats, crime waves, immigration panics: stoke the worry, then hand someone the mandate to “fix“ it. 
 
