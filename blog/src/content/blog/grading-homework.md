@@ -10,7 +10,7 @@ You can’t scroll for long at the moment without another AI doom headline.
 
 Recently, they’ve started to quote former/current Anthropic employees, warning that the thing they built is/could be spiralling out of control.
 
-People often take those warnings at face value. Conversations with friends, family, across the dinner table, all become a horror story and something else to worry about. It's hard to argue otherwise. It sounds cavalier. 
+People often take those warnings at face value. Conversations with friends, family, across the dinner table, all become a horror story and something else to worry about. It's hard to argue otherwise, it almost sounds cavalier to do so. 
 
 A [clue](https://x.com/kevinnbass/status/2099621874279817638) has emerged this week that may help. Anthropic (the company behind Claude) is accused of quietly building a machine that benefits from AI looking dangerous.
 
