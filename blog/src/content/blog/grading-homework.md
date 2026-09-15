@@ -6,7 +6,7 @@ heroImage: '../../assets/danger.jpg'
 tags: ["thoughts", "ai"]
 ---
 
-You can’t scroll for long at the moment without another AI doom headline.
+You can’t scroll for long at the moment without another AI doom headline. Not just the job displacement doom, but the existential threat of AI.
 
 Recently, they’ve started to quote former/current Anthropic employees, warning that the thing they built is/could be spiralling out of control.
 
@@ -32,11 +32,13 @@ Fear isn’t just a side effect here, it’s useful.
 
 I don’t think this means Anthropic sat in a room and plotted it. Maybe I’m wrong. Regulatory capture rarely needs a conspiracy. It just needs incentives that all point the same direction, and people who are genuinely convinced they’re doing the right thing,  while also, conveniently, entrenching their own position.
 
-That’s actually the more unsettling version. Not villains, just an ecosystem that rewards fear whether anyone intended it to or not.
+That’s why it’s a more unsettling version. Not villains, just an ecosystem that rewards fear whether anyone intended it to or not.
 
 Watch who’s funding the people telling you something is dangerous. 
 
 Not because they’re necessarily lying. But because “we need more oversight“ said by whoever’s best placed to survive that oversight should always get a second look.
+
+Weirdly, Trump has come out on the side of no regulation. Maybe he's spotted it too and it jealous of the power and money in AI, and would rather cause chaos than see them win. 
 
 So I’m not on board with team “AI will kill us all“ or team “it’s all hype”. But I am on board with team “follow the money before you follow the fear”.
 
