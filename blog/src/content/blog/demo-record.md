@@ -18,13 +18,15 @@ That was Nebraska. The demo went on to become the record, and a classic.
 
 Most of us do the opposite. We treat version one, the MVP, like the opening act. We hustle it out the door, then spend three weeks polishing it and stand there stunned when it lands dead.
 
+> We treat version one, the MVP, like the opening act.
+
 I’ve done this myself on many design projects. Often you have this great initial version, tried to improve it, and ended up making it overcomplicated or less useful. 
 
 The trouble is, we assume unfinished or ‘draft’ means inferior, not done. We assume the first version is just a starting point, something to be improved upon. But sometimes it already contains the thing we’re looking for.
 
 That doesn’t mean rough is always better, or that you should never iterate. It means you need to recognise what’s working before you start changing things.
 
-So before you rebuild it, improive it – play the first pass back as if a stranger handed you the tape. Ask what it had that you’re about to polish away.
+So before you rebuild it, improve it – play the first pass back as if a stranger handed you the tape. Ask what it had that you’re about to polish away.
 
 Some days the answer is nothing. Fine, rebuild away.
 
