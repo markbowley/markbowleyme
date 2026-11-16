@@ -19,6 +19,8 @@ That vacuum created space for a new industry. Specialty Coffee didn’t win by b
 - barista skill and hospitality
 - flavour as a feature
 
+(/images/friction.png "Tweet by Dror Poleg")
+
 Automation didn’t kill coffee. It killed undifferentiated coffee.
 And it created demand for what automation had ironed out.
 
