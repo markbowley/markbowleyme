@@ -32,6 +32,10 @@ And the Huang saga is the cleanest example yet, because the price tag was public
 
 > Huang is just the latest to perform the genius exception script.
 
+![Parody tweet mockup](../../assets/huang-post.png "This is a parody tweet, just to be clear")
+
+
+
 Steve Jobs is where the myth started. Jobs’ behaviour was well documented – being demanding, humiliating staff in public, taking credit for other people’s work. Apple pushed him out once in 1985, nearly went under without him, then brought him back in 1997. What followed was their best years ever. Maybe a lesson the Valley took to heart: being awful isn’t just tolerable, it’s an acceptable part of the package.
 
 To be fair, Jobs was ousted that time over a boardroom power struggle, not misconduct. But his comeback is where “difficult genius” became a job description.
