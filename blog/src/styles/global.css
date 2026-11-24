@@ -129,7 +129,7 @@ pre > code {
 blockquote {
 	border-left: 4px solid var(--accent);
 	padding: 0 0 0 20px;
-	margin: 0 0 3rem 0;
+	margin: 2rem 0 3rem 0;
 	font-size: 1.333em;
 }
 
@@ -182,6 +182,6 @@ figure img {
 figcaption {
 	margin-top: 0.6em;
 	text-align: center;
-	font-size: 0.875em;
+	font-size: 0.55em;
 	color: var(--gray);
 }
