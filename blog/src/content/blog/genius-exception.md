@@ -22,6 +22,8 @@ Yesterday, on 23 November, the board voted unanimously to reinstate him. Its sta
 
 Leather jacket back on. Normal service resumed. The rest of the world reacts how it reacts depending on their point of view, or their involvement in the stakes.
 
+![Quote froim the FT](../../assets/ft-huang.png "Huang isn't valuable for his management skills")
+
 Personaly it feels like a poke in the eye to everyday people, but I can see the geopolitical and global security reasons for it. It’s a bit like SpaceX launches – you can’t help but be impressed, but something about the moral side of it bothers you. 
 
 So silicon Valley seems to have an unwritten rule. Call it the genius exception: build something big enough, make enough money, matter to national security, and the normal rules stop applying to you.
