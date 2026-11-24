@@ -12,10 +12,7 @@ Rules bent, decisions reversed, people who should be finished somehow aren’t. 
 
 Eleven days. That’s all Jensen Huang was gone. Is this something new, or has big tech always worked like this?
 
-![Close up of a leather jacket](../../assets/bad-boy.jpg)
-
-Photo from [Unsplash](https://unsplash.com/photos/person-in-black-zip-up-jacket-3bezj3s2gwg)
-
+![Close up of a leather jacket](../../assets/bad-boy.jpg "Photo from Unsplash")
 
 On 12 November, Nvidia announced he’d resigned as CEO after reports of extramarital affairs. It’s not a tabloid story, it’s a national security one.
 
