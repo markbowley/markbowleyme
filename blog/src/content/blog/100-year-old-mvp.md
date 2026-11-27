@@ -2,7 +2,7 @@
 title: "The story of an MVP from 100 years ago"
 description: "The story of the moment in history when radio took off in America, and how it happened because of a manually operated MVP."
 pubDate: 2023-09-27
-heroImage: '../../assets/blog-placeholder-3.jpg'
+heroImage: '../../assets/radio.jpg'
 tags: ["creator-life", "thoughts", "mvp"]
 ---
 
