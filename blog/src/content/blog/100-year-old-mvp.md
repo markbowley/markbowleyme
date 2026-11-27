@@ -3,7 +3,7 @@ title: "The story of an MVP from 100 years ago"
 description: "The story of the moment in history when radio took off in America, and how it happened because of a manually operated MVP."
 pubDate: 2023-09-27
 heroImage: '../../assets/blog-placeholder-3.jpg'
-tags: ["creator-life", "thoughts"]
+tags: ["creator-life", "thoughts", "mvp"]
 ---
 
 I’ve been reading a Bill Bryson book called [One Summer](https://www.amazon.co.uk/One-Summer-America-1927-Bryson-ebook/dp/B00D48BT5A) for a while now, picking it up and putting it down in between other books. It’s a fascinating read full of facts and anecdotes from a period in American history (the 1920s) when a lot seemed to happen in a short space of time. 
